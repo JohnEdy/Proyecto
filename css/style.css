@@ -1,0 +1,497 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+/* navbar */
+.navbar {
+    font-weight: bold !important;
+    font-style: italic !important;
+    color: black !important;
+    background-color: #ffd26b !important;
+    margin-bottom: 30px !important;
+    padding-bottom: 5pt !important;
+    padding-top: 5pt !important;
+    z-index: 1 !important;
+}
+
+.items {
+    color: #4e4e4e !important;
+}
+
+.items:hover {
+    background-color: #edc847;
+    color: #4e4e4e;
+}
+
+.nav-item {
+    margin-left: 2.5pt;
+    margin-right: 2.5;
+}
+
+.dropdown-menu {
+    background-color: #fff4db;
+    border: 1p solid #fff4db;
+    border-radius: 5pt;
+}
+
+.dropdown-item:hover {
+    background-color: #fadd93;
+}
+
+.items-active {
+    background-color: #b79801 !important;
+    color: #4e4e4e !important;
+}
+
+.btn-group {
+    float: right;
+}
+
+/*footer */
+.footer {
+    margin-top: 30pt;
+    background-color: #ffd26b;
+    margin-bottom: 0;
+    width: 100%;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    font-weight: bold;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    color: black;
+    font-weight: unset;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    font-weight: bold;
+}
+
+/* containers */
+.container-menu {
+    padding-right: 30pt;
+    padding-left: 30pt;
+    padding-bottom: 20pt;
+    padding-top: 20pt;
+    background-color: #eeeeee;
+    flex-wrap: 1;
+}
+
+.buscador {
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+    background-color: #eeeeee;
+    padding-right: 30pt;
+    padding-left: 30pt;
+    padding-bottom: 20pt;
+    padding-top: 20pt;
+}
+
+.arqueos {
+    margin-top: 10pt;
+    margin-left: 30pt;
+    margin-right: 30pt;
+    margin-bottom: 20pt;
+}
+
+.cantidadPaginas {
+    text-align: center;
+    padding-bottom: 10pt;
+}
+
+/* FORMS */
+.form-label {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.row {
+    margin-top: 8pt;
+    min-width: 150pt;
+}
+
+.btnSubmit {
+    text-align: center;
+    margin-top: 30pt;
+}
+
+.btnSubmit button[type='submit'] {
+    font-weight: bold;
+}
+
+.btnSubmit button[type='submit']:hover {
+    background-color: #0142a3;
+}
+
+select[class=form-control] {
+    background-image: url('../img/flecha.png');
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 7pt;
+    background-blend-mode: luminosity;
+    background-size: 12pt;
+}
+
+.form-control[id=datepicker] {
+    background-image: url('../img/calendario.png');
+    background-repeat: no-repeat;
+    background-size: 20pt;
+    background-position-x: 97%;
+    background-position-y: 3pt;
+}
+
+/* MENU DE ACORDEON */
+.accordion-container {
+    width: 100%;
+    margin: 0 0 5px;
+    list-style: none;
+}
+
+.accordion-titulo {
+    position: relative;
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4e4e4e;
+    text-decoration: none;
+}
+
+.accordion-titulo:hover {
+    background-color: #edc847;
+    border-radius: 15pt;
+}
+
+.accordion-titulo span.toggle-icon:before {
+    content: "+";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+    content: "-";
+}
+
+.accordion-titulo span.toggle-icon {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accordion-content {
+    display: none;
+    margin-top: 5pt;
+    margin-left: -15pt;
+    margin-bottom: 10pt;
+    margin-right: 20pt;
+    list-style: none;
+    overflow: auto;
+}
+
+@media (max-width: 767px) {
+    .accordion-content {
+        padding: 10px 0;
+    }
+}
+
+/* Textos */
+.titulos {
+    margin-top: auto;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 20pt;
+}
+
+.tituloSecciones {
+    color: black;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.subtitulos {
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.informacion {
+    margin-left: 10pt;
+}
+
+/* Tablas */
+.tablaPropia {
+    border: 10pt solid gray;
+    border-radius: 10pt;
+    width: 100%;
+    max-width: 100pt;
+}
+
+.tablaPropia tbody tr td {
+    border: 1pt solid gray;
+}
+
+.tablaPropia tfoot th {
+    background-color: #fff4db;
+    border: 1pt solid gray;
+}
+
+.tablaPropia thead th {
+    border: 1pt solid gray;
+    background-color: #fff4db;
+}
+
+.tablaPropia .rowT:hover {
+    background-color: #cfcece;
+}
+
+/* Otros */
+.billete {
+    width: 160pt;
+    height: 70pt;
+}
+
+.padre {
+    position: relative;
+}
+
+.errorDocumento {
+    color: red;
+    font-size: 10pt;
+}
+
+.hijo {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 30%;
+    margin: auto;
+}
+
+.alert {
+    border-radius: 50pt;
+}
+
+.bgImage {
+    background-color: #4e4e4e;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bgImage .container-menu {
+    flex: 1 1;
+}
+.bi::before {
+    display: inline-block;
+    content: "";
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+}
+
+/* page */
+.page-wrapper {
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+}
+
+/* box */
+.box-content {
+    padding: 10px;
+    height: 10pt;
+    background-color: #EFEFEF;
+}
+
+textarea {
+    background-color: #FAFAFA;
+    border: #EFEFEF solid 1px;
+    color: #333;
+    width: 100%;
+}
+
+/* richtext custom style */
+.richText {
+    margin-top: 0 auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 20px 0 #999;
+    -moz-box-shadow: 0 0 20px 0 #999;
+    box-shadow: 0 0 20px 0 #999;
+    border-radius: 10pt;
+}
+
+.richText-editor {
+    padding: 1000pt;
+}
+
+.btn-sm {
+    width: auto;
+    padding: 5pt;
+    height: auto;
+    font-size: 9pt;
+    font-weight: bold;
+    border-radius: 10pt;
+}
+
+.btn:hover {
+    border: -2pt solid white;
+}
+
+.btn-warning {
+    background-color: yellow;
+}
+
+.containerInto {
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+input[readonly] {
+    cursor: not-allowed;
+}
+
+input[disabled] {
+    cursor: not-allowed;
+}
+
+.btn {
+    border-radius: 100pt;
+}
+
+input {
+    border-radius: 100pt !important;
+}
+
+select {
+    border-radius: 100pt !important;
+}
+
+thead {
+    border-radius: 100pt !important;
+}
+
+/*****************************
+
+PARA DISPOSITIVOS MÓVILES
+
+******************************/
+/* Para pantallas mas pequeñas de 1200px */
+@media (max-width: 800px) {
+
+    .titulos {
+        margin-top: 90pt;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .login {
+        margin-top: 20pt;
+        margin-left: 45pt;
+        margin-right: 45pt;
+    }
+
+    .login input {
+        min-width: 60pt;
+    }
+
+    .row .col {
+        font-size: 15pt;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center !important;
+    }
+
+    .footer .col-3 {
+        margin-top: 10pt;
+    }
+
+    .footer .col-6 {
+        margin-top: 10pt;
+    }
+
+    .logoHeader {
+        display: none;
+    }
+
+    .logoLogin {
+        display: none;
+    }
+
+    .col-1 {
+        min-width: 100%;
+    }
+
+    .col-2 {
+        min-width: 100%;
+    }
+
+    .col-3 {
+        min-width: 100%;
+    }
+
+    .col-4 {
+        min-width: 100%;
+    }
+
+    .col-5 {
+        min-width: 100%;
+    }
+
+    .col-6 {
+        min-width: 100%;
+    }
+
+    .col-7 {
+        min-width: 100%;
+    }
+
+    .col-8 {
+        min-width: 100%;
+    }
+
+    .col-9 {
+        min-width: 100%;
+    }
+
+    .col-10 {
+        min-width: 100%;
+    }
+
+    .col-11 {
+        min-width: 100%;
+    }
+
+    .col-12 {
+        min-width: 100%;
+    }
+
+    .buscador .col-1 {
+        margin-top: 10pt;
+    }
+
+    .buscador .col-4 {
+        margin-top: 10pt;
+    }
+
+    .buscador .col-2 {
+        margin-top: 10pt;
+    }
+}
+
+/* Para pantallas mas grandes de 1200px */
+@media (min-width: 800px) {
+    .navbar {
+        position: sticky;
+        top: 0px;
+    }
+}
